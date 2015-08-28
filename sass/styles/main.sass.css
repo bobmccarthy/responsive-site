@@ -10,6 +10,7 @@ header {
 .backgroundpic {
   background-image: url("https://github.com/TIY-Austin-Front-End-Engineering/responsive-site/blob/master/background.jpg?raw=true");
   background-color: grey;
+  background-size: cover;
   padding: 4.375em 0;
   margin-bottom: 2em;
   color: white; }
@@ -41,7 +42,7 @@ header {
       border: .1em solid black;
       border-radius: 2em;
       line-height: 2em;
-      margin: 0 9em;
+      margin: 0 40%;
       box-sizing: border-box;
       font-weight: bold; }
   .personal .green {
@@ -84,6 +85,43 @@ header {
 
 footer {
   background-color: black;
-  color: white;
-  padding: 1.75em 2.5em;
-  line-height: 1.5em; }
+  color: grey;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1.55em 2.5em;
+  line-height: 1.5em;
+  font-size: 1.2em; }
+  footer span {
+    color: white;
+    text-decoration: underline; }
+
+@media screen and (min-width: 29.9375em) {
+  .backgroundpic {
+    padding: 8.9em 0; }
+    .backgroundpic > div {
+      font-size: 3em; }
+  header div {
+    margin: 0 1.3em; } }
+
+@media screen and (min-width: 48em) {
+  .midstuff {
+    overflow: hidden; }
+    .midstuff .personal {
+      box-sizing: border-box;
+      width: 33%;
+      float: left; }
+  .lotstext {
+    overflow: hidden; }
+    .lotstext .getstarted {
+      box-sizing: border-box;
+      width: 50%;
+      float: left;
+      height: 21.25em; }
+  .last div {
+    width: 4em; } }
+
+@media screen and (min-width: 61.1875em) {
+  .midstuff {
+    padding: 0 14%; }
+  .lotstext {
+    padding: 0 14%; } }
